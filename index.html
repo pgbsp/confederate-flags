@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flags of the Confederate States</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="exhibit">
+        <header class="hero">
+            <p class="eyebrow">Prairie Grove Interpretive Collection</p>
+            <h1>Flags of the Confederate States</h1>
+            <p class="subtitle">Proposed and Adopted National Flags, 1861–1865</p>
+        </header>
+
+        <section id="imagePanel" class="image-panel" aria-label="Flag image; swipe or drag to browse">
+            <img id="flagImage" class="flag-image" src="" alt="" draggable="false">
+            <p id="imageFallback" class="image-fallback" hidden></p>
+        </section>
+
+        <section class="flag-info" aria-live="polite">
+            <div class="meta-bar">
+                <div class="meta-item">Year: <strong id="flagYear"></strong></div>
+                <div class="meta-item">Designer: <strong id="flagDesigner"></strong></div>
+                <div class="meta-item status-item"><span id="flagStatus"></span></div>
+            </div>
+
+            <h2 id="flagTitle"></h2>
+            <div class="content-block">
+                <h3>The Artifact</h3>
+                <p id="flagDescription"></p>
+            </div>
+            <div class="content-block">
+                <h3>Historical Context</h3>
+                <p id="historicalContext"></p>
+            </div>
+        </section>
+
+        <section class="timeline-section" aria-label="Flag collection navigation">
+            <h3 class="timeline-title">Flag Collection</h3>
+            <div id="timeline" class="timeline"></div>
+        </section>
+
+        <footer class="navigation">
+            <button id="prevBtn" class="nav-btn" type="button">← Previous Flag</button>
+            <div class="counter"><span id="currentIndex"></span> / <span id="totalFlags"></span></div>
+            <button id="nextBtn" class="nav-btn" type="button">Next Flag →</button>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
